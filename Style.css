@@ -1,0 +1,325 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+}
+@media all and (orientation: portrait) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media all and (max-width: 420px){
+
+    .icon-container img{
+        width: 1em;
+    }
+
+    .home-button{
+        margin: auto;
+        margin-bottom: 5px;
+    }
+}
+
+.main-header{
+    background-color: rgba(247, 247, 247, 1);
+    width: 100%;
+    display: flex;
+    vertical-align: center;
+    min-height: 75px;
+    margin: 0;
+}
+
+.main-header-nav{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+    vertical-align: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-button{
+    background-color: rgba(12, 133, 67, 1);
+    align-items: center;
+    vertical-align: center;
+    padding: 2px;
+    border-radius: 0.4em;
+    display: flex;
+}
+
+.icon-container{
+    padding: 5px;
+    background-color: white;
+    border-radius: 0.3em 0 0 0.3em;
+}
+
+.home-button span{
+    color: white;
+    font-family: Oswald;
+    font-size: 14px;
+    margin: 3px;
+}
+
+.weather{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather>span{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: calc(9px + .6vw);
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.b1{
+    display: flex;
+    align-items: center;
+}
+
+.deg{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6vmin;
+    line-height: 28px;
+    margin-right: 0.5em;
+}
+
+.b2{
+    border-top: 1px solid gray;
+    display: flex;
+    align-items: center;
+}
+
+.b3{
+    display: flex;
+    flex-direction: column;
+}
+
+.b4{
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+}
+
+.b4 span{
+    margin-right: 1rem;
+    font-size: calc(7px + .6vw);
+}
+
+
+
+.visually-hidden{
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.headline{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-h{
+    text-align: start;
+    line-height: 7vmin;
+    margin: 0;
+    font-family: Oswald;
+    font-size: 5vmin;
+    font-weight: normal;
+    color: rgba(39, 39, 39, 1);
+}
+
+.main-h strong{
+    font-weight: normal;
+    color: rgba(218, 56, 40, 1);
+}
+
+.tag-container{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.tag{
+    display: flex;
+    letter-spacing: 1px;
+    background-color: rgba(234, 247, 233, 1);
+    border: 1px rgba(198, 216, 196, 1) solid;
+    border-radius: 0.1em;
+    padding: 0.1em;
+    white-space: nowrap;
+}
+
+.tag span{
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.42em;
+    line-height: 200%;
+    margin-right: auto;
+}
+
+.tag img{
+    width: 15%;
+    margin: 0;
+}
+
+.info-container{
+    margin-top: 3%;
+    display: flex;
+}
+
+.info-container p{
+    margin-right: 2%;
+    margin-top: 0;
+    ont-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: calc(7px + .8vw);
+    line-height: 150%;
+    color: #000000;
+}
+
+.chip{
+    font-family: "Roboto";
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: red;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.awards{
+    background-color: rgba(242, 247, 250, 1);
+    padding: 2%;
+}
+
+.awards h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6vmin;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.72px;
+    text-align: center;
+    margin: 0;
+}
+
+.c1{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+    grid-gap: 1em;
+}
+
+.benefits{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-family: Roboto;
+    padding: 0;
+    font-size: 1rem;
+    margin-right: 2em;
+}
+
+.benefits li{
+    padding: 0.2em;
+    font-size: calc(10px + .4vw);
+}
+
+.awards-img{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.awards-img img{
+    min-width: 70px;
+    max-width: 20%;
+    height: auto;
+}
+
+.advantages h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6vmin;
+    line-height: 150%;
+    margin-bottom: 0;
+    letter-spacing: 0.72px;
+    color: #000000;
+}
+
+.advantages p{
+    margin: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: calc(7px + .8vw);
+    line-height: 150%;
+    color: #000000;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-gap: 1.4em;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img{
+    width: 100%;
+    height: auto;
+}
+
+.main-footer{
+    margin-top: 2em;
+    background-color: rgba(40, 40, 40, 1);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 55px;
+    justify-content: center;
+}
+
+.footer-nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-nav a{
+    margin: 2vmin;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #E2E3E4;
+}
